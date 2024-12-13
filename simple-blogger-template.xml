@@ -5,6 +5,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
     <b:skin><![CDATA[
         html {
             scroll-behavior: smooth;
@@ -155,6 +158,15 @@
             color: white;
             text-align: left;
         }
+
+pre {
+    margin-left: 1.5em;  
+    background-color:#f8f8f8;  
+    padding: 10px; 
+    font-family: monospace; 
+    white-space: pre-wrap;  
+}
+
         footer {
             text-align: center;
             padding: 10px 0;
