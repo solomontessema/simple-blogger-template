@@ -12,12 +12,12 @@ This repository contains a clean, modern, and responsive template designed for B
 
 ## How to Use
 1. **Download the Template**:
-   - Clone this repository or download the `template.html` file.
+   - Clone this repository or download the `simple-blogger-template` file.
 
 2. **Upload to Blogger**:
    - Go to your Blogger dashboard.
    - Navigate to **Theme** > **Backup/Restore** > **Restore**.
-   - Upload the `template.html` file.
+   - Upload the `simple-blogger-template.html` file.
 
 3. **Customize Your Blog**:
    - Add your blog title, description, and posts using the Blogger interface.
