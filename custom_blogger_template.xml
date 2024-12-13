@@ -194,7 +194,7 @@
         <div class="content">
 <div class="hero-section">
     <!-- Home Button -->
-    <a href="https://solomon-tessema.github.io" class="home-button" title="Home">
+    <a href="https://solomontessema.github.io" class="home-button" title="Home">
         Home
     </a>
     <div class="hero-text"></div>
@@ -211,13 +211,13 @@
             <!-- Navbar Above About Me -->
 <nav>
     <div class="menu-links">
-        <a href="https://solomon-tessema.github.io" target="_blank" title="Website">
+        <a href="https://solomontessema.github.io" target="_blank" title="Website">
             <i class="fas fa-globe"></i>
         </a>
         <a href="https://www.linkedin.com/in/solomon-tessema" target="_blank" title="LinkedIn">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/solomon-tessema" target="_blank" title="GitHub">
+        <a href="https://github.com/solomontessema" target="_blank" title="GitHub">
             <i class="fab fa-github"></i>
         </a>
         <a href="https://www.kaggle.com/solomonTTessema" target="_blank" title="Kaggle">

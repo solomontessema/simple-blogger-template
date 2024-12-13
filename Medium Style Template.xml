@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title><data:blog.title/></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Charter:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <b:skin><![CDATA[
+        body {
+            font-family: 'Charter', Georgia, serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #ffffff;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+            color: #292929;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            margin: 30px 0;
+            font-family: 'Helvetica';
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-size: 1.125rem;
+            margin: 25px 0;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin: 15px 0;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            display: flex; /* Enable flexbox for horizontal alignment */
+            justify-content: space-between; /* Space between title and navbar */
+            align-items: center; /* Vertically center items */
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: #f9f9f9; /* Optional: Light background for the header */
+        }
+
+        .header a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #292929;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex; /* Align menu items horizontally */
+        }
+
+.menu-links a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    margin-right: 20px; /* Adds space between icons */
+}
+
+.menu-links a:last-child {
+    margin-right: 0; /* Removes margin for the last element */
+}
+        .container {
+            display: flex; /* Enable flexbox for side-by-side layout */
+            max-width: 1200px; /* Increase max width to accommodate both content and sidebar */
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px; /* Space between the main content and sidebar */
+        }
+
+        .content {
+            flex: 3; /* Main content takes 3 parts of the space */
+            padding: 15px;
+        }
+
+        .sidebar {
+            flex: 1; /* Sidebar takes 1 part of the space */
+            max-width: 300px; /* Set a maximum width for the sidebar */
+            padding: 15px;
+        }
+
+        .post-title {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .post-meta {
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f9f9f9;
+            border-left: 5px solid #1a73e8;
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.875rem;
+            color: #999;
+        }
+
+        .date-header {
+            font-size: 1.125rem;
+            color: #808080; /* Gray color */
+            margin: 0; /* Adjust margin if needed */
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+
+            .post-title {
+                font-size: 1.75rem;
+            }
+        }
+    ]]></b:skin>
+</head>
+<body>
+    <div class="header">
+        <!-- Blog Title -->
+        <a href=""><data:blog.title/></a>
+
+        <!-- Navbar -->
+        <nav>
+            <div class="menu-links">
+                <a href="https://solomontessema.github.io" target="_blank" title="Website">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/solomon-tessema" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/solomontessema" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.kaggle.com/solomonTTessema" target="_blank" title="Kaggle">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+                <a href="https://public.tableau.com/profile/solomon.tessema/vizzes" target="_blank" title="Tableau">
+                    <i class="fas fa-chart-bar"></i>
+                </a>
+                <a href="https://datascienceelements.blogspot.com" target="_blank" title="Blogger">
+                    <i class="fab fa-blogger"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content and Sidebar -->
+    <div class="container">
+        <!-- Main Content -->
+        <div class="content">
+            <b:section id="main" class="blog-posts" showaddelement="yes">
+                <b:widget id="Blog1" type="Blog" title="" />
+            </b:section>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Profile Section -->
+            <div>
+                <b:section id="profileSection" class="sidebar-section" showaddelement="yes">
+                    <b:widget id="Profile1" type="Profile" title="About Me" />
+                </b:section>
+            </div>
+
+            <!-- Archive Section -->
+            <div>
+                <b:section id="archiveSection" class="sidebar-section" showaddelement="yes">
+                    <b:widget id="BlogArchive1" type="BlogArchive" title="Archives" />
+                </b:section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&#169; <data:blog.title/> | Powered by Blogger</p>
+    </footer>
+</body>
+</html>
